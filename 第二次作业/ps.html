@@ -30,11 +30,11 @@
             width: 250px;
             height: 40px;
             border: 1px solid #66ccff;
-            background-image: url(./img/btn-blue.png);
+            background-image: url(./img/btn-gray.png);
             border-radius: 6px;
             font-size: 28px;
             margin:20px 15px;
-            color: black;
+            color:#3070e0;
             outline: none;
             z-index:3;
         }
@@ -80,12 +80,12 @@
     {
         for(var i=0;i<btns.length;i++){
             if(btns[i].id==id){
-                btns[i].style.backgroundImage="url(./img/btn-gray.png)";
-                btns[i].style.color="#3070e0";
+                btns[i].style.backgroundImage="url(./img/btn-blue.png)";
+                btns[i].style.color="black";
             }
             else{
-                btns[i].style.backgroundImage="url(./img/btn-blue.png)"
-                btns[i].style.color="black";
+                btns[i].style.backgroundImage="url(./img/btn-gray.png)"
+                btns[i].style.color="#3070e0";
             }
         }
     }
