@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+    <style>
+        html{
+            font-size:calc(10px+1vw);
+            font-family: "Adobe 黑体 Std R";
+            background-image: url("img/timg.jpg");c
+        }
+        img{
+            clear: both;
+            display: block;
+            margin:auto;
+            max-width: 80%;
+            border-radius: 50%;
+        }
+        nav{
+            display: flex;
+            width: 100%;
+            background-color: #66ccff;
+        }
+        nav a{
+            flex:1;
+            text-decoration: none;
+            color: #ffffff;
+            padding:0 1em;
+            border: 1px solid;
+            font-size: 15px;
+            font-weight: bold;
+            line-height: 2;
+        }
+        .clear{
+            clear: both;
+            height: 0;
+            width: 100%;
+            padding: 1%;
+        }
+        .a{
+            width:50%;
+            float: left;
+            border-right: 2px solid #000;
+        }
+        .b{
+            overflow: hidden;r
+        }
+        .a p{
+            text-align: right;
+        }
+
+        @media screen and (max-width: 480px){
+            nav{
+                flex-direction: column;
+            }
+
+        }
+    </style>
+</head>
+<body>
+<nav>
+    <a href="#">简介</a>
+    <a href="#">实践经历</a>
+    <a href="#">奖项</a>
+    <a href="#">b站账号(？)</a>
+</nav>
+<img  src="img/无标题.png" >
+<div class="clear"></div>
+<div class="a">
+    <p>姓名:周宇轩&nbsp;</p>
+    <p>学历:高中&nbsp;</p>
+    <p>毕业高中:深圳中学&nbsp;</p>
+    <p>专业:通信工程&nbsp;</p>
+    <p>性格:热情、开朗、善于合作、有创造性&nbsp;</p>
+
+</div>
+<div class="b">
+    <p>&nbsp;性别:男</p>
+    <p>&nbsp;职业:大一在校生</p>
+    <p>&nbsp;就读大学:华中科技大学</p>
+    <p>&nbsp;学制:本科四年</p>
+    <p>&nbsp;爱好:羽毛球、书法、游戏</p>
+</div>
+</body>
+</html>
