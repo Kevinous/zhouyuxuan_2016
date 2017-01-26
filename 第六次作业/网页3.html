@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+    <style>
+        html{
+            font-size:calc(10px+1vw);
+            font-family: "等线";
+            background-image: url("img/timg.jpg");c
+        }
+        img{
+            clear: both;
+            display: block;
+            margin:auto;
+            max-width: 80%;
+            border-radius: 50%;
+        }
+        nav{
+            position: fixed;
+            display: flex;
+            width: 100%;
+            background-color: #66ccff;
+        }
+        nav a{
+            flex:1;
+            text-decoration: none;
+            color: #ffffff;
+            padding:0 1em;
+            font-family: 等线;
+            font-size: 15px;
+            text-align: center;
+            line-height: 2;
+        }
+        nav a:not(:first-child){
+            border-left: 1px solid #fff;
+            border-collapse: collapse;}
+
+        .clear{
+            clear: both;
+            height: 0;
+            width: 100%;
+            padding: 7vw;
+        }
+        .reward{
+            margin-left: 15%;
+            width: 70%;
+            height: 70%;
+            text-align: center;
+            vertical-align: middle;
+            border: 1px solid #000;
+            border-spacing: 0;
+            border-collapse: collapse
+        }
+        tr th,td{
+            border: 0.5px solid #000;
+            border-collapse: collapse;
+        }
+        tr th{
+            font-size: large;
+            line-height: 1.5em;
+        }
+        .reward__spe{
+            font-size: large;
+            height: 30vw;
+            color: #6c6c6c;
+        }
+
+        @media screen and (max-width: 480px){
+            nav{
+                flex-direction: column;
+            }
+            nav a:not(:first-child){
+                border-top: 1px solid #fff;
+                border-collapse: collapse;}
+        }
+
+
+    </style>
+</head>
+<body>
+<nav>
+    <a  href="网页1.html">简介</a>
+    <a href="网页2.html">作品</a>
+    <a href="网页3.html">奖项</a>
+    <a href="#" onClick="test();" >b站账号(？)</a>
+</nav>
+<div class="clear"></div>
+<div class="content">
+    <table class="reward">
+        <tr>
+            <th>时间</th>
+            <th>奖项</th>
+        </tr>
+        <tr>
+            <td class="time"></td>
+            <td class="reward__spe">暂无相关资料</td>
+        </tr>
+    </table>
+</div>
+</body>
+<script>
+    function test()
+    {
+        alert("并不告诉你");
+    }
+
+</script>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+    <style>
+        html{
+            font-size:calc(10px+1vw);
+            font-family: "等线";
+            background-image: url("img/timg.jpg");c
+        }
+        img{
+            clear: both;
+            display: block;
+            margin:auto;
+            max-width: 80%;
+            border-radius: 50%;
+        }
+        nav{
+            position: fixed;
+            display: flex;
+            width: 100%;
+            background-color: #66ccff;
+        }
+        nav a{
+            flex:1;
+            text-decoration: none;
+            color: #ffffff;
+            padding:0 1em;
+            font-family: 等线;
+            font-size: 15px;
+            text-align: center;
+            line-height: 2;
+        }
+        nav a:not(:first-child){
+            border-left: 1px solid #fff;
+            border-collapse: collapse;}
+
+        .clear{
+            clear: both;
+            height: 0;
+            width: 100%;
+            padding: 7vw;
+        }
+        .content__left{
+            width:49%;
+            float: left;
+            display: table;
+            text-align: center;
+            vertical-align: middle;
+            border: 1px solid #6c6c6c;
+        }
+        .title{
+            display: table-caption;
+            border: 1px solid #6c6c6c;
+            margin: 0;
+            border-collapse: collapse;
+            padding: 0.5em;
+            background-color: #003d79;
+            color: white
+        }
+        .cont{
+            display: table-cell;
+            border-top: 0px;
+            height: 25vw;
+            vertical-align: middle;
+            color: rgba(0, 0, 0, 0.42);
+            font-size: larger
+        }
+        .content__right{
+            width:50%;
+            float: left;
+            display: table;
+            text-align: center;
+            vertical-align: middle;
+            border: 1px solid #6c6c6c;
+        }
+
+
+        @media screen and (max-width: 480px){
+            nav{
+                flex-direction: column;
+            }
+            nav a:not(:first-child){
+                border-top: 1px solid #fff;
+                border-collapse: collapse;}
+        }
+    </style>
+</head>
+<body>
+<nav>
+    <a  href="网页1.html">简介</a>
+    <a href="网页2.html">作品</a>
+    <a href="网页3.html">奖项</a>
+    <a href="#" onClick="test();" >b站账号(？)</a>
+</nav>
+<div class="clear"></div>
+<div class="content__left">
+    <p class="title" >文学作品</p>
+    <p class="cont" >暂无具体资料</p>
+</div>
+<div class="content__right">
+    <p class="title" >媒体文稿</p>
+    <p class="cont" >暂无具体资料</p>
+</div>
+</body>
+<script>
+    function test()
+    {
+        alert("并不告诉你");
+    }
+
+</script>
+</html>
