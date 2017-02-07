@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script content="text/javascript">
+    var a="游泳,健身,篮球,游泳,健身,阅读" , b = [], j=0;
+    for(var i=0;i< a.length;i++) {
+        if (a[i] == ',') {
+            b = a.slice(j , i + 1);
+            a = a.replace(b , '');                  //在这里我加了/g以后alert失效，原因不明
+            j = i + 1;
+        }
+}
+    alert(a);
+</script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var day = 23;
+    var today = "2017/1/" + day,array=[],obj={date:2333,daysbefore:3};
+    function  obj(date,daysbefore) //声明对象
+    {
+        this.date = date;
+        this.daysbefore= daysbefore;
+    }
+    for(var i = 1;i <= 4; i++) {
+        array.push(new obj(7 * i - 6 , 25 - day + 7 * i) );
+    }
+    alert("2017/2/" + array[0].date + array[0].daysbefore + "/n" +"2017/2/" +array[1].date + array[1].daysbefore + "/n"  +"2017/2/" + array[2].date + array[2].daysbefore + '/n'  +"2017/2/" + array[3].date + array[3].daysbefore);
+</script>
+</body>
+</html>

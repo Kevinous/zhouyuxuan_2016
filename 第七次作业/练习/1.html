@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var a = '3efu8-rt67f-e42op-8rpol';
+    while(a.indexOf('-') >= 0)
+        a = a.replace('-','');
+    a = a.toUpperCase();
+    if(a.length===20){
+        alert(a);
+    }
+    else{
+        alert("异常，无效的密码格式");
+    }
+</script>
+</body>
+</html>
